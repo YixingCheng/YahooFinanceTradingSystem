@@ -55,8 +55,7 @@
                   </ul>
                   
       </sec:authorize>
+    </div><!--/.nav-collapse -->
 
-
-    </div>
   </div>
 </nav>
