@@ -186,6 +186,7 @@
   			padding: 0;
   			position: fixed;
   			left: 50%;
+  			top: 50%;
   			z-index: 1;
   			min-width: 100%;
 			min-height: 100%;
