@@ -193,6 +193,7 @@
 			  width: auto;
 			  height: auto;
   			transform: translate(-50%, -50%);
+  			preload: auto;
 		}
 		
 		.header-content-inner {
