@@ -5,8 +5,24 @@ existing elements. If they are the same, then return flase and won't replece
 the origin element.
 
 2. Implement Singleton in Java
+public class MySingle {
+	private static MySingle mySingle;
+	private MySingle (){};
+	public getInstance(){
+		if (mySingle == null){
+			synchornized (MySingle.class) {
+				if (mySingle == null){
+					mySingle = new MySingle();
+				}
+			}
+		}
+	}
+}
+
 3. Difference between checked and unchecked exception
 4. Producer/Consumer model in Multithreading
+
+
 5. Difference between Comparable and Comparator
 6. How does a HashEt know duplicate elements? Relation between hashCode and equals methods
 7*. If there is a memory leak in Java application, how to locate it? 
