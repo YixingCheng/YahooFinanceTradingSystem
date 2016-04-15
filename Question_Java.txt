@@ -1,0 +1,721 @@
+Java
+1. How does Java eliminate duplicates in Set
+When the add() method is called, compare the hashCode() and equals() with
+existing elements. If they are the same, then return flase and won't replece
+the origin element.
+
+2. Implement Singleton in Java
+3. Difference between checked and unchecked exception
+4. Producer/Consumer model in Multithreading
+5. Difference between Comparable and Comparator
+6. How does a HashEt know duplicate elements? Relation between hashCode and equals methods
+7*. If there is a memory leak in Java application, how to locate it? 
+8. Difference between List and Set
+9. How to make thread-safe in Java?
+10. How to insert element into a Set?
+11. What is the order of multiple cath clauses?
+12. Can final ArrayList add element? If yes, how to add element in a final ArrayList?
+    If no, how to implement it by using reflection?
+13. How to customize hashCode and equals methods?
+14. How to improve memory size? Difference between -xMs and -xMx.
+15. Hierarchy of synchronization
+16. Different types of Class Loader and how class loaders work?
+17. If two classes are the same class, how to distinguish them?
+18. What is serialVersionUID? Can different beans have same UID? Can we not use UID?
+19. Difference between string and new String()
+20. Show the mechanics of StringBuffer and StringBuilder
+21. What is an immutable class?
+22. Difference between HashMap and Hashtable
+23. Explain WeakHashMap
+24. What is Generics?
+25. Difference between TreeSet and LinkedHashSet
+26. Explain Serialization in Core Java
+27. Difference between HashSet and TreeSet
+28. What is Collection hierachy in Java?
+29. How to you sort objects in Collection?
+30. The performance of a HashMap is slow. How to solve that?
+31. Difference between abstract class and interface. Give me an example when do you use
+    abstract class and another example when do you use interface.
+32. What will finally do?
+33. What is autoboxing? Give me an example.
+34. Explain Factory pattern
+35*. If you deploy a project which include a Singleton, into 2 clusters in a WebLogic server, 
+    how many objects of this Singleton class will be created?
+36. How to write your own exception?
+37. How many drivers do JDBC have?
+38. Is Java pass by value or pass by reference?
+39. Can enum type be abstract?
+40. Difference between ArrayList and LinkedList
+41. Explain Java Class Loader
+42. What is reflection and how to use it?
+43. Explain thread life cycle.
+44. Difference between synchronized block and synchronized method
+45. How to handle runtime exception?
+46. Explain the internal process of HashMap.
+47. List methods in class Object
+48. Give a List<Integer>, what if I still want to add String objects in it?
+49. For the answer of question #48, what is difference between List<Object> and List<? extends Object>
+50. How to inject a Date using SimpleDateFormat?
+51. Explain the inner structure of ConcurrentHashMap
+52. What is the problem of the function: boolean check(String str) { return str.equals("abc"); }
+53. Difference between & and &&
+54. How to check whether a key exists or not in a Map?
+55. New features in Java 1.7 and Java 1.8
+58. Difference between Map and List
+59. Difference between Runnable and Callable
+60. Explain Executor and Thread Pool
+61. Suppose you have several threads in the main method, you want the main method quit right after
+    all the other threads finish their task, what will you do?
+62. If you want to use a Java class as the key in a HashMap, what should you be careful about?
+63. If x=10, y=20, exchange the value of the two variables without using other variable.
+64. Talk about Java Reference Types.
+65. Difference between StringBuffer and StringBuilder
+66. Difference between final, finally and finalize
+67. Explain volatile keyword
+68. Talk about three statements in JDBC
+69. How to make a transaction in JDBC?
+70. What is WildCard type? Give some examples.
+71. What is marker interface? Give some examples.
+72. What is Serializable used for? Can it have control on what you write and read?
+73. How do you close connection in JDBC?
+74. Explain Command pattern. How is it used in Java?
+75. Difference between HashMap and ConcurrentHashMap
+76. How do you use clone method?
+77. If you use HashSet, what will you do?
+78. Does volatile keyword assure atomicity and visibility?
+79. Talk about clone method, why clone is protected? If super class does not implement Cloneable,
+    what will happen if I override clone method in subclass?
+80. What will yu care when using wait and notify method?
+81. How to make a class immutable?
+82. If class A's constructor prints "a", class B is a subclass of A and its constructor prints "b",
+    what will be printed when we call new B()?
+83. How to use wait, notify and notifyAll? Explain how do they work.
+84. How to make thread safe in multiple ways?
+85. How to create Thread Pool? Explain different types of Thread Pool.
+86. What is Future?
+87. Can two threads access a synchronized static method and a synchronized non-static method of an 
+    object at the same time?
+88. Explain Semaphore and Mutex
+89. A class Person has String firstName, String lastName and List<String> address, how to make it immutable?
+90. Difference between wait and sleep method. Can you wake up a sleep method?
+91. Explain interrupt method
+92. How to implement Producer and Consumer using wait and notify?
+93. How to make an ArrayList thread-safe?
+94. Given a method, pass a primitive, or an object, change them inside the method, how is the value
+    outside the method?
+95. How to test protected methods in JUnit?
+96. Difference between join and yield methods
+97. Difference between execute and submit methods 
+98. Describe the components in Spring
+99. Explain BlockingQueue
+100. How to prevent dead lock?
+101. Which one do you choose, Hibernate or JDBC? Why?
+102. class Base { 
+	public static void A() {}
+	public void B() {}
+     }
+     class Ext extends Base {
+	public static void A() {}
+	public void B() {}
+     }
+     Can we write Base a = new Ext()?  If we call a.B(), which method is called? What if we call a.A()?
+103. For List and Map, how will you find a given String? What is the time complexity for List and Map
+     to search a certain String? What if the String does not exist in List/Map?
+104. Given an example that we must use multithread.
+105. What is ExecutorService?
+106. Difference between Collection and Collections? Can we define Collections as interface? Why?
+107. What is a Connection Pooling?
+108. Difference between PreparedStatement and CallableStatement
+109. How many types of Exception?
+110. How do you create a Thread?
+111. If you do Collections.sort(), it sorts in ascending order by default. What if you want to sort
+     in descending order?
+112. If we have a HashMap<String, String>, and we do put("abc", "123") and put("bac", "132"). Suppose
+     "abc" and "bac" return the same hashcode, what will happen, insert or overwrite? If "abc".equals("bac")
+     returns true, what will happen, insert or overwrite?
+113. Explain join method
+114. Difference between transient and volatile
+115. Explain Polymorphism
+116. In what framework will you use multithreading?
+117. What if the hash function in HashMap is bad designed?
+118. Explain cons and pros for Cache
+119. How to get Timestamp?
+120. How to investigate memory dump (See question #7)
+121. How to generate a random unique number in Java?
+122. Difference between composition and inheritance
+123. In Garbage Collection, how could system know that there are no pointer to a certain resource?
+124*. How JVM implements finally?
+125*. How to do JVM performance tuning?
+126. Explain Reentrant Lock
+127. Difference between throw and throws
+128. New features in Java 5
+129. If we add multiple duplicated elements in one Set, what is the size of the Set?
+130. How to sort a list of String and how to reverse it?
+131. What is the default szie of ArrayList?
+132. Difference between override and overload
+133. In Collection framework, how do you iterate a list?
+134. Can you get to know when garbage collection happens?
+135. Difference between ConcurrentHashMap and synchronized HashMap
+136. Explain PriorityQueue
+137. Difference between Vector and ArrayList
+138. Can inner class access outside field?
+139. Explain final keyword
+140. Difference between Heap and Stack
+141. How to synchronize an ArrayList?
+142. Explain features in OOP
+143. In which situation we should use ConcurrentHashMap?
+144. How many ways to create an object?
+145. Difference between String and StringBuffer
+146. Write a class to implement Runnable
+147. Explain anonymous inner class
+148. Given class Employee that has many fields. How to sort it using ssn + firstName + lastName?
+149. What are two types of polimorphism? Give examples.
+150. Understand abstract class. Can abstract class have constructor? Can it be final?
+151. A Java class A has a private constructor and two abstract methods. The class B extends A, 
+     override methods in class A. Create an object of B and invoke any method. What happens?
+152. If the keys of a HashMap return a unique hashcode, what happens?
+153. What is HashMap collision? Is it good or bad for HashMap?
+154. If three threads want to access three synchronized methods, what happens?
+155. If a thread calls wait(), does it release the lock? What if it calls notify()?
+156. What is String Pool?
+157. Can a Singleton class be extended?
+158. What is the deadlock in Java?
+159. What is static block in Java? Give an example.
+160. What is the result of compiling and running this program?
+	class Mammal {
+		void eat(Mammal m) { System.out.println("Mammal eats food"); }
+	}
+	class Cattle extends Mammal {
+		void eat(Cattle c) { System.out.println("Cattle eats hay"); }
+	}
+	class Horse extends Cattle {
+		void eat(Horse h) { System.out.println("Horse eats hay"); }
+	}
+	public class Test {
+		public static void main(String[] args) {
+			Mammal h = new Horse();
+			Cattle c = new Horse();
+			c.eat(h);
+		}
+	}
+161. What is the result of compiling and running this program?
+	class Base {
+		static int value = 0;
+		Base() { addValue(); }
+		static void addValue() { value += 10; }
+		int getValue() { return value; }
+	}
+	class Derived extends Base {
+		Derived() { addValue(); }
+		static void addValue() { value += 20; }
+	}
+	public class Test {
+		public static void main(String[] args) {
+			Base b = new Derived();
+			System.out.println(b.getValue());
+		}
+	}
+162. What is the result of compiling and running this program?
+	class Base {
+		static int value = 0;
+		Base() { addValue(); }
+		void addValue() { value += 10; }
+		int getValue() { return value; }
+	}
+	class Derived extends Base {
+		Derived() { addValue(); }
+		void addValue() { value += 20; }
+	}
+	public class Test {
+		public static void main(String[] args) {
+			Base b = new Derived();
+			System.out.println(b.getValue());
+		}
+	}
+163. Given final List list = new ArrayList();
+	A. list.add(1);
+	B. list = null;
+	C. list.remove(1);
+     Which of A, B, C are correct?
+164. Tell me about Java accessibilities. What is the difference between default and protected?
+165. How to make the below class thread safe?
+	public class Counter {
+		int i;
+		public int getter() { return i; }
+		public void setter(int i) { this.i = i; }
+	}
+166. What are methods in Map?
+167. Where is ConcurrentHashMap located? (In what package)
+168. What does JUnit look like?
+169. Did you call garbage collection on your own?
+170. What is SQL Injection attack?
+171. Difference between Error class and Exception class
+172. What collection you would use if you want to prevent storing duplicated elements and 
+     also can be sorted?
+173. What is ConcurrentModificationException?
+174. What is race condition? How to solve it?
+175. If you use synchronized block, does the deadlock still happen?
+176. Given the following code
+	synchronized void f1() { while (true) System.out.println("A"); }
+	synchronized void f2() { while (true) System.out.println("B"); }
+	synchronized void f3() { while (true) System.out.println("C"); }
+     If three threads t1, t2, t3 try to run f1, f2, f3 by order, will f2 and f3 be accessed?
+     What will be the output if we make f1 static? Can we ever see "B" or "C" coming out?
+177. A thread uses 4 hours to produce a number. Another thread takes 5 minutes to consume it. How to
+     make this work?
+178. Difference between InputStream and Reader
+179. If you have synchronized method in a class, is the lock on the class level or on the method itself?
+     If you have multipl synchronized methods defined in a class, can each of them be called by different
+     threads?
+180. If there are 10 threads in the program, how can you determine all the threads are finished?
+181. Difference between start and run method in Thread
+182. Explain Adapter pattern
+183. How do you implement a stack using an Array in Java?
+184. Which of the following statement is true?
+	Double a = 3.1;
+	Double b = 3.1;
+	(1) a==b
+	(2) a!=b
+	(3) a>b
+185. If you want to customize Serialization, what will you use?
+186. Is generics working at compile time or runtime?
+187. What is Type Erasure?
+188. How to know wait and notify work on which object? Why it has to write into a synchronized block?
+189. Which Collection should be used for more insertion and less select? Why?
+190. One HashMap has 1000 records and the other HashMap has 10000 records. Compare their performance.
+191. Explain Facade pattern and where do you use it?
+192. What data structure should be used to store a telephone directory?
+193. Write java code to shuffle deck of cards
+194*. LoanProcess class has method calculateInterest, different state has different rules. How to design it?
+195. What class do you use to parse XML?
+196. Difference between Builder pattern and Decorator pattern
+197. Tell me some mock framework for unit testing
+198. Explain Observer Pattern
+199. How to sort a character list containing 'A' to 'Z'? What if it contains digits?
+200. For HashMap and Hashtable, which one allows null key? How to access the value corresponding to the
+     null key? Where does it allocate this key-value pair?
+201*. For HashMap, Hashtable, ConcurrentHashMap, TreeMap, which one allows null key and which on allows
+     null value?
+202. If a.equals(b) returns true, should a.hashCode()==b.hashCode()? What about the other way around?
+203. Difference between data type "Date" in Java and JavaScript
+204*. What are the generations in Heap?
+205. What is the meaning of Class.forName
+206. Difference between Decorator Pattern and Proxy Pattern.
+207. Given A = {a,b,c,d,e} and B = {c,e,a}. The elements in A indicates their priority. So a has the 
+     lowest priority and e has the highest priority. Now output B based on priority. The output of B
+     should be e,c,a. How do you implement it?
+208. Design a class Employee that may be of different role with different bonus. 
+209. What is ClassCastException? Give me an example. Will it happen when you cast abstract class to
+     concrete class?
+210. How to change a Singleton to non-Singleton?
+211. What kind of exception can you see when you try to load an file? 
+212. What kind of exception can you see when the number of elements is more than the collection size?
+213. How many Java Collection do you know? List them and explain their usage.
+214. How to concatenate two strings and how to use Java method to split different fields?
+215. Tell me about the implementation of Java Mail in your project.
+216. In Singleton, what do you need to be careful of in constructor?
+217. If a singleton call another function, what should you be careful of?
+218. How to stop a thread?
+219. Difference between Serializable and Externalizable
+220. In JUnit, describe "set up before".
+221. Difference between fail-fast iterator and fail-safe interator
+222. How to make an object immutable if we don't use final keyword?
+223. How to count the number of objects created and destroyed in the JVM?
+224. Difference between Factory Pattern and Abstract Factory Pattern
+225. What happens if two users want to access the Singleton at the same time?
+226. How do you implement Java Mail? How do you handle the address string in Java Mail?
+227. What is the worst case for insertion in HashMap? And what is the best case?
+228. What is thread pool? Why using thread pool is bettern than building a new thread?
+229. Which kind of thread should not be put into the thread pool? In which situation, buildig a new thread
+     is better than using thread pool?
+230. Explain the performance and behavior differences between a TreeMap and a HashMap. What are the 
+     underlying reasons of those differences?
+231. When a class is designed as not thread-safe, what does it mean? What can one do to use a class
+     that is not thread-safe in a safe manner?
+232. What are the most important mechanisms that Java provides to minimize concurrency problem?
+233. Talk about the cons and pros of Annotation.
+234. What is destructor in Java?
+235. An interface is called Vehicle and it has two subclasses Car and Bus. A method is defined below
+	void drive(Vehicle v)
+     Then we define two objects
+	Car c = new Car();
+	Bus b = new Bus();
+     Can c or b used as the parameter in the method drive? If yes, how to distinguish them in drive?
+236. There are two interfaces A and B. A class Sub implements A. How to use the function in interface
+     B within subclass Sub without implementing B?
+237. How to shut down a thread?
+238. Why to choose Integer or String as key in HashMap? Can you put object as key in HashMap?
+239. How to keep order in HashMap?
+240. Given an array, how to find the minimum value and maximum value at the same time?
+241. Difference between Deep Copy and Shallow Copy
+242. What is the problem of inline sql? How do you solve the problem?
+243. Difference between Calendar and Date
+244. Does Generics take effect in compile time or runtime?
+245. How to read from a text file?
+246. What is Observer Pattern? How to use it?
+247. What is LRU cache and LFU cache?
+248. Explain Callable interface
+249. What is atomic operation? Give me an example.
+250. Why are sleep and yield methods static?
+251. Difference between start and run method in class Thread
+252. Explain dead lock, live lock and starvation of a thread
+253. Read the following code
+	if (state=='NY') rate = 3.09;
+	else if (state=='NJ') rate = 8.03;
+	else rate = 0;
+     Find all problems about it.
+254. Read the following code
+	A a = new A();
+	B b = new B();
+     Can a and b have the same hashcode? If put them into the HashMap, what will happen if they
+     have the same hashcode?
+255. Read the following code
+	class A { public String str = "a"; }
+	class B extends A { public String str = "b"; }
+	A a = new A();
+	A b = new B();
+	System.out.println(a.str + b.str);
+     What is the result?
+256. Scenario: If one component's change needs to be reflected to other components, how to design?
+257. Scenario: If one trader made a transaction, what mechanism will be used to notify other traders?
+258. When you run System.gc(), does it promise that the object will be recycled?
+259. What are the two ways of using thread? Why do you prefer one of them?
+260. How to make a dead lock and how to solve a deadlock?
+261. Can the method in parent class be public and the overridden method in child class be private?
+262. Can a class have multiple main methods?
+263. Difference between throw and throws
+264. Does Java support multiple inheritance? Why?
+265. We have many kinds of database, how to use Java to link those databases?
+266. How to do Cache in Java without framework?
+267. We have class A which uses some methods from class B and class C. How to achieve it?
+268. What is ResourceBundle? How to use ResourceBundel to read a properties file?
+269. Explain try-with-resource
+270. Difference betwee @After and @AfterClass in Junit.
+271. What is MockRunner?
+272. Is array mutable in Java? Is array fix size?
+273. Which List should be used to do insertion work very fast?
+274. Is the lookup of a HashMap always O(1)?
+275. Given a class who has fields firstName, lastName and salary. Can you sort the objects of the class
+     by lastName? Can we sort part of these objects by firstName and the rest by lastName in one Comparator?
+276. What is the output of the following code?
+	public static int test() {
+		try {
+			int x = 10/0;
+		} catch (Exception e) {
+			System.out.println("In catch");
+			return -1;
+		} finally {
+			System.out.printn("In finally");
+		}
+		return 0;
+	}
+277. Assume you have 2000 companies and their stocks. How do you store them by using which collection?
+278. Difference between volatile and synchronized
+279. Use HashMap as Cache. It only keeps the most recent 50000 records, how to design it?
+280. 
+
+JavaEE
+1. Difference between forward and redirect
+2. Servlet life cycle
+3. How does servlet handle concurrent requests?
+4*. How do you secure a RESTful web service?
+5. How to pass data in Struts?
+6. Difference between doGet and doPost
+7*. Different levels of Log4j
+8. What is annotation? When do you use it?
+9. What is JNDI? Where do you use it?
+10. Database Connection Pool, describe the details. How to configure it?
+11. JSP life cycle
+12. How to you call DAO from service class?
+13. How to add an object in a HttpSession?
+14. How does Struts MVC work? How to configure Struts?
+15. Difference between Stateful and Stateless
+16. Explain RESTful web services.
+17. Explain JAXB and JAX-RS
+18. Difference between Topic and Queue
+19. Difference between REST and SOAP
+20. What are JSP implicit objects?
+21. How to configure session timeout?
+22. What is the main component in Struts?
+23. What are the different types of ActionForm?
+24. Explain Struts2 workflow
+25. Compare Struts2 MVC and Spring MVC
+26. How does the server instantiate ApplicationContext? Why is the server aware of the existance of Spring?
+27. For RESTful web service, how to make it stateful?
+28. Difference between POST and PUT in REST?
+29. How to configure REST? Describe REST work flow.
+30. Have you used Maven? What are the commands for building Maven dependencies? What are the benefits
+    by using Maven.
+31. Did you use Spring Quartz? How do you use it? How to configure it to fire up a scheduled application
+    on time?
+32. Explain Filter
+33. Difference between Session Bean and Entity Bean
+34. How to configure JUnit using Maven?
+35. Difference between forward and redirect
+36. What are different parsers in XML? Explain.
+37. What is UDDI? What is its purpose?
+38. What is WSDL? What is its purpose? Do you think we won't be using WSDL afterwe use SOAP and REST?
+    Will your IDE generate WSDL somewhere in your package while using SOAP? Where will it generate?
+39. What is JSTL? What is its purpose? How and where do you use it? Please specify.
+40. Difference between parameter and attribute
+41. Difference between DOM and SAX
+42. In JSP&Servlet, how to transfer a request to another servlet?
+43. Given Servlet s1 and s2, how to make s2 handle the request when a request is directed to s1 by default?
+44. How to share data with different pages?
+45. How do you configure web.xml so that you can call a Servlet?
+46. Can you list serveral ways to parse XML data?
+47. How to keep data persistency for different pages?
+48. Difference between BMT(Bean Managed Transaction) and CMT(Container Managed Transaction)
+49. How does the Servlet work when multiple threads want to use it? How to make sure the resource in
+    the Servlet is thread-safe?
+50. How do I deal with multi-valued parameters in a Servlet?
+51. Tell me your experience of development of web services. Do you focus on producer or consumer of
+    web services?
+52. Difference between Struts 1 and Struts 2
+53. How to handle multiple submissions in Struts?
+54. Suppose in a bank, which layer do you put the methods like withdraw, deposit and balance check?
+55. What is the work flow for your data to be presented on the front page?
+56. If I have 10000 pages and I want to change a format of a small part, what will you do?
+57. Find the problem in the code and fix it.
+ 	public class Servlet extends HttpServlet {
+		public static int requestNo = 0;
+		public void doGet(HttpServletRequest req, HttpServletResponse resp) {
+			requestNo++;
+			resp.getWriter().println(requestNo);
+		}
+	}
+58. Do you use the session to store username and password?
+59. Difference between JSP and Servlet
+60. If your create a bean objet in one page, how does it infect other pages?
+61. If you click the submit button in the web page but there is no response, what would you do?
+62. 
+
+Spring
+1. Difference between BeanFactory and ApplicationContext
+2. How does Spring instantiate a bean? Different ways to configure a bean
+3. Spring scope
+4. How to do injection in Spring?
+5. Spring transaction management
+6. Spring lazy-loading feature
+7. If service is a singleton, dao is a prototype, what happens?
+8. If service is a prototype, dao is a singleton, what happens?
+9. Two ways of dependency injection and their difference
+10*. Do you know the Controller thread-safe issue? How do you avoid that?
+11. How to configure Hibernate in Spring?
+12*. Three ways of mapping in Spring MVC
+13. How Spring connnects to database?
+14. Spring MVC workflow
+15. In which situation you use constructor injection instead of setter injection?
+16. How to do dependenc injection using properties files?
+17. Explain AOP. Why do you use it and how to use it in detail?
+18. What does SimpleUrlHandlerMapping look like? How to configure it?
+19. Explain autowire
+20. In Spring MVC which class can be used to handle the different URL and decide the trigger method?
+21. What annotations you used in the past work and what's the @Component annotation?
+22. How to configure Spring transaction management?
+23. How to represent a bean in Spring?
+24. How to configure a HashMap in Spring config file?
+25. How to you use Spring Security in your project?
+26. Did you use Cache in your project? How do you use Spring Cache?
+27. Difference between Spring Cache and Hibernate Cache.
+28. In Spring transaction management, how to keep Session open?
+29. How to make Spring integrated with Hibernate?
+30. Explain Spring Security and how to configure it?
+31. What design pattern that Spring IoC is based on?
+32. What other design patterns are used in Spring?
+33. Explain Proxy pattern and what is the benefits using Proxy?
+34. How does Spring integerate with JDBC?
+35. Write a method to retrieve all employee records from database using JdbcTemplate
+36. Compare BeanFactory and ApplicationContext
+37. How many different types of ApplicationContext? Where to put the xml file name;
+38. Explain Spring Batch
+39. In Spring Security, how can a user and an admin go to different page after successful login?
+40. What kind of Controller do you use in Spring MVC?
+41. How Spring simulates REST?
+42*. How do you manage session timeout with Spring?
+43. How to invoke the Jersey REST by AJAX from client side?
+44. How to configure a singleton class in Spring?
+45*. Why to use @Profile in Spring?
+46. Why to use @Qualifier in Spring?
+47. Explain advice and pointcut in Spring AOP. What is difference between AOP and IoC?
+48. About Spring REST
+    (1) If request has serveral parameters, what do you do?
+    (2) If you write a REST client to consume SOAP, what do you do?
+    (3) If a REST controller returns plain text instead of JSON, what do you do?
+49. Types of advices in Spring
+50. What is ViewResolver?
+51. What is ModelAndView in Spring MVC?
+52. What is the most challenging difficulty for Spring you have?
+53. How to integrate Struts2 with Spring?
+54. Do you know the new features in Spring 4?
+55. What is Spring component-scan?
+56. What is the difference between other MVC and Spring MVC?
+57. What specific functionalities of Spring did you use?
+58*. What is interface injection in Spring?
+59. Why do we use constructor injection? What could be the problem if we use constructor injection?
+60. In Spring MVC, what is the return value of the controller? How to handle the data received from 
+    Spring MVC?
+61. List some design patterns used in Spring
+62. Explain Spring Quartz
+63. What are different types of ApplicationContext did you use?
+64. Explain Spring annotation @Autowire. How to enable the annotation?
+65. 
+
+Hibernate
+1. Difference between load and get methods
+2. Hibernate Lazy loading issue with proxy pattern
+3. Criteria in Hibernate
+4. Difference between Session and SessionFactory
+5. Difference between persistence(attached) and detached? 
+6. Which method can invoke detached to persistance?
+7. Difference between HQL and SQL
+8. When do you use Criteria?
+9. Which Hibernate features did you use?
+10. How would you do the one-to-one mapping?
+11. How would you do the one-to-many mapping?
+12. Given two tables customer(cust_id, firstname) and address(addr_id, cust_id, street, city, state)
+    (1) How would you build your hibernate objects?
+    (2) Write the HQL that returns all customers who lives in New Jersey?
+13. What would you use as a surrogate key?
+14*. If you want to deal with a query that returns 1 million records in Hibernate, what would you do?
+15. What is Hibernate Dialect? What is it used for?
+16. Difference between merge and saveOrUpdate methods?
+17. What is projection? How to implement projection in Criteria?
+18. Explain Hibernate Lazy Fetching.
+19. What is cascade and which one can be used to delete part of the records in database?
+20. Different types of Hibernate files. What are there responsibilities?
+21. Different isolation levels
+22. In Hibernate how do you configure lazy-fetch, eager-fetch, left join fetch?
+23. Compare Hibernate.initialize, fetch=FetchType.EAGER and left join fetch
+24. Can we map a relation to one-to-many when it is actually one-to-one? Explain your answer.
+25. Is Hibernate Session thread-safe?
+26. Suppose you have a table which has no relationship to other tables. It uses firstname and lastname
+    as composite key, it also has other columns such as address, how will you design the Java class?
+27. What is Hibernate Proxy?
+28. How Hibernate Cache works?
+29. Tell the advantage and disadvantage (cons and pros) of Hibernate.
+30. How to call native SQL?
+31. When to use named query and when to use Criteria in Hibernate?
+32. Explain Hibernate second-level caching.
+33. Talk about inheritance in Hibernate.
+34. How to make a bean persistence?
+35. Talk about typical configurations in Hibernate
+36. How to configure two tables in one Hibernate mapping file?
+37. What is Session object in Hibernate? Is it thread-safe?
+38. How to configure many-to-many in Hibernate?
+39. In many-to-many mapping, usually it has three tables. Is it needed to define a class for each table?
+40. Have you used session.flush() in Hibernate?
+41. What kind of difficulty you've ever been involed in when you use Hibernate? 
+42. How do you solve the lazy fetching problem in Hibernate?
+43. In Hibernate, how to make sure the memory doesn't leak if it queries millions of records? 
+    (See question #14)
+44*. Have you seen StaleObjectStateException?
+45. What is Hibernate @Formula?
+46. How to map for class hierachy?
+47. Can we configure a table without primary key?
+48. What is the Fetch strategies in Hibernate?
+49. How to remove cache in Hibernate?
+50*. How do you make a column or combination of columns unique in Hibernate?
+51. How to do sorting in Hibernate?
+52. How to enhance the performance in Hibernate?
+53. What is cascade and inverse?
+54. How to do it without cascade?
+55. Why do we use second-level caching? What happens if different JVM uses data in second-level cache?
+56. Explain Batch processing in Hibernate
+57. What are different types of transaction locks in Hibernate?
+58. 
+
+Database:
+1. What is database view?
+2. Difference between stored procedure and function
+3. Different types of triggers
+4. If a SQL has bad performance, what do you do to optimize it?
+5. Client is using your application. However when they load the job list from the database, it takes 
+   1000 ms to load. In the development environment, it only takes 10ms. The tables are the same. What 
+   might be missing in client's database table so that they get worse performance?
+6. Do you think it is a good idea to create index for each column of a table?
+7. Your manager told you to do a report, but the query takes a really long time, what's your 
+   suggestion now?
+8*. What is two-phase commit?
+9. How does index improve performance?
+10. Difference between clustered index and non-clustered index
+11. What if the query is slow?
+12. What is the right join and left join? Give examples.
+13. Difference between primary key and unique key
+14. What is to_char function in Oracle?
+15. Tell me some implicit PL/SQL objects.
+16. What kind of objects does PL/SQL generate?
+17. What is decode method?
+18. What is materialized view?
+19. Can we insert a row into a view? How about materialized view?
+20. Is it possible to create an index on a view? How about materialized view?
+21. Have you used SQL Loader? Explain it.
+22. Explain Partition By clause in Oracle
+23. Why do you use foreign key? Give examples.
+24. How to query a table with million records?
+25. What is hint?
+26. Difference between Normalization and Denormalization. What is 1NF, 2NF, 3NF and BCNF?
+27. Give me 5 data types in Oracle
+28. How long is a varchar2?
+29. Schema Design: Design dept and emp tables, such that one emp can only work for one dept.
+    What if one emp can work for multiple dept? What if there are ten more columns in dept table?
+    How to use HashMap<Employee, Department> in the emp class?
+30. Difference between char and varchar2 in Oracle
+31. How to select first 50 records from a table?
+32. Difference between delete and truncate
+33. Difference between union and union all
+34. Difference between view and materialized view
+35. What is partition table? Is it a real table or logical one? How to use logical partitiona table?
+36. What is the result if we run the query: select * from tabel1, table2
+37. What are isolation levels in database?
+38.
+
+Other:
+1. If you just finish a story and the business analyst is unsatisfied with your work, what will you do?
+2. What will you do if QA finds a defect in your story?
+3. What will you do if the team assign a story to you should finish it within 5 days but the actual 
+   workload will be much more than 5 days?
+4. What if your current story has dependency with another team and they haven't finish their job in time?
+5. What do you do in an Agile environment?
+6. What is execution plan?
+7. How to mock DB?
+8. If you are given a computer on the first day, what will you do?
+9. How to set up environment?
+10. What would you do if you found a defect in production environment?
+11. What would you do if you found a defect in testing environment?
+12. What would an agile team be like? How many memebers in the team?
+13. What is the most challenge in your recent project?
+14. What is agile scrum?
+15. If you don't understand something in the specification document, how do you go about this?
+16. If deadline is approaching and something breaks in production, give an example of it and what steps
+    you do to handle it?
+17. Describe your day to day work. What development methodologies do you know?
+18. How do you debug your web application?
+19. What is our scrum routine?
+20. What triggers you to keep learning?
+21. How do you deal with big data?
+22*. Even if index is in place, why full table scan is triggered?
+23. In stored procedure, what is in/out parameter?
+24. How do you decide priority of your work?
+25. Did you use Single-Sign On? What is the benefit?
+26. Difference between call option and put option
+27. Explain in detail about TDD
+28. Explain the difference between Agile and Waterfall
+29. How to mentor a junior developer to develop code with high quality?
+30. What is bond and equity? What is hedge fund? What is money laundering?
+31. What kind of financial reports did you latest project (finance project) generate?
+32. How do you debug your code?
+33. What is your nightmare in your recent project?
+34. How did you face challenge?
+35. What is the location of your last project and what is the building near by it?
+36. If you get a task that has three days time limit and your found that you could not finish it
+    on the last day. What will you do?
+37. How long it takes you to implement a business requirement?
+38. How to you check if the application has performance issue during production level?
+39. Difference between a senior developer and a junior developer
+40. How do you handle deadline in your past project?
+41. What is prototype programming?
+42. Give me three reasons why I should hire your.
+43. Tell me your weakness.
+44. 
+
