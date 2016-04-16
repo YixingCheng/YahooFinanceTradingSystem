@@ -112,7 +112,11 @@ partitions which can be locked independently. A list of hashtable.
     Used the yoda condition "abc".equals(str)
 
 53. Difference between & and &&
+    & is bitwise add, && is logical add
+
 54. How to check whether a key exists or not in a Map?
+    
+
 55. New features in Java 1.7 and Java 1.8
 58. Difference between Map and List
 59. Difference between Runnable and Callable
