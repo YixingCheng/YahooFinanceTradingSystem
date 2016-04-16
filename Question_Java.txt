@@ -115,11 +115,36 @@ partitions which can be locked independently. A list of hashtable.
     & is bitwise add, && is logical add
 
 54. How to check whether a key exists or not in a Map?
-    
+    Map.containsKey() method. 
+    The value will be placed in a bucket of the Map depending on the hashCode of the Key.
 
 55. New features in Java 1.7 and Java 1.8
+    Java 1.7 Diamond operator,
+             Using String in switch statement,
+             try with resourch
+             numeric literal with underscore
+             one catch block for multiple types of excetpions
+             new file system API( NIO 2.0)
+             file change notification
+
+    Java 1.8 Lamda expression
+    	     Stream API
+    	     Functional interface
+    	     Nashorn Node.js on JVM
+    	     Data/Time API changes
+    	     Type annotation
+    	     
 58. Difference between Map and List
+    Map is a mapping of key/values, a list is a list of items.
+    Map is not ordered. TreeMap is ordered.
+    List is ordered by its insertion order.
+
 59. Difference between Runnable and Callable
+    A Callable needs to implement call() method while a Runnable needs to implement run() method.
+    A Callable can return a value but a Runnable cannot
+    A Callable can throw checked exception but Runnable cannot
+    
+
 60. Explain Executor and Thread Pool
 61. Suppose you have several threads in the main method, you want the main method quit right after
     all the other threads finish their task, what will you do?
