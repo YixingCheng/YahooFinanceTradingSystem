@@ -24,7 +24,28 @@ public class MySingle {
 
 
 5. Difference between Comparable and Comparator
+   Comparator is used to provide a custom comparision logic for types you
+don't have control over it. It is often used as anonymous inner class and you
+have to override @compare method. 
+   Comparable allows you to specify how objects that you are implementing get
+compared. You need to implement Comparable<Object> interface for the Object
+class and override the @compareTo() method.
+
+    public class BeanA implements Comparable<Beans>{
+        @Override
+        public int compareTo(BeanA a){};
+    
+    }
+
+    Collections.sort(list, new Comparator<BeanB>(){
+        @Override
+        public int compare(BeanB a, BeanB b){};
+    });
+
+
 6. How does a HashEt know duplicate elements? Relation between hashCode and equals methods
+   
+
 7*. If there is a memory leak in Java application, how to locate it? 
 8. Difference between List and Set
 9. How to make thread-safe in Java?
@@ -72,8 +93,24 @@ public class MySingle {
 48. Give a List<Integer>, what if I still want to add String objects in it?
 49. For the answer of question #48, what is difference between List<Object> and List<? extends Object>
 50. How to inject a Date using SimpleDateFormat?
+    1. First use Date curDate = new Date() to get current date.
+    2. then new a instance of SimpleDateFormat using SimpleDateFormat
+constructor. You can pass in date formats as argument in the constructor.
+    3. get the string using format(curDate) to the the string represtionation
+of the date.
+    4. To reverse, the Date object can be obtained using parse() method.
+ 
 51. Explain the inner structure of ConcurrentHashMap
+    There is a concurrency level concept in ConcurrentHashMap. 16 locks by
+default, each is used to guard a single bucket of the map.
+    ConcurrentHashMap is achieved by partioning the map. It has multiple
+partitions which can be locked independently. A list of hashtable.
+
+
 52. What is the problem of the function: boolean check(String str) { return str.equals("abc"); }
+    The str can be null. Should put the literal before the variable.
+    Used the yoda condition "abc".equals(str)
+
 53. Difference between & and &&
 54. How to check whether a key exists or not in a Map?
 55. New features in Java 1.7 and Java 1.8
